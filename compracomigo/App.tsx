@@ -20,7 +20,7 @@ export default function App() {
     const sessionId = uuid.v4().toString();
     const saveSession = async () => {
       try {
-        await api.post(setSession.setSession(sessionId));
+        // await api.post(setSession.setSession(sessionId));
 
         const session = await api.post(routes.setSession(sessionId));
 
